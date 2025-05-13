@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+
+        <img src="./undraw_healthy-options_ne00.svg">
+
+        </section>
+        <section id="calculator" >
+            <form id="form" >
+                <h1 id="title">Calculadora</h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em KG
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            kg
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <input type="number" id="height" required>
+                        <span>
+                            m
+                        </span>
+                    </div>
+
+                </div>
+
+                <button id="calculate">Calcular</button>
+
+
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>seu imc</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="more-info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">Acesse para mais informações.</a>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+
+
+
+</html>
